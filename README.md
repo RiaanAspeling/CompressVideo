@@ -21,7 +21,7 @@ The output might look like this:
 ```
 Destination file exist: ./videos/Season 1/video1.S34E04.mkv
 ---------------------------------------------------------------------------------------------------------------------------------
-Compressing  /mnt/videos/Season 1/video2.mkv  with size ( 1280 x 720 ) to file  ./Season 1/video2.mkv
+Compressing  /mnt/videos/Season 1/video2.mkv  with size ( 1280 x 720 ) to file  ./videos/Season 1/video2.mkv
 ---------------------------------------------------------------------------------------------------------------------------------
 x265 [info]: HEVC encoder version 3.4
 x265 [info]: build info [Linux][GCC 7.5.0][64 bit] 8bit+10bit+12bit
