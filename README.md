@@ -1,5 +1,5 @@
 # CompressVideo
-This script compresses videos to h265 (HEVC) from one location to another recursivly.
+This script compresses videos to h265 (HEVC) from one location to another recursivly without overwriting the destination.
 
 # Requirement
 The script uses ffmpeg and can be install on Debian/Ubuntu based systems with:
