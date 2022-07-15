@@ -1,15 +1,21 @@
 # CompressVideo
-This script compresses videos from one location to another recursivly to x265 (HEVC).
+This script compresses videos to h265 (HEVC) from one location to another recursivly.
+
+# Requirement
+The script uses ffmpeg and can be install on Debian/Ubuntu based systems with:
+```
+~$ apt install ffmpeg
+```
 
 # Usage
 ```
-~$./compress_video.sh [Extension] [Start dir] [Destination dir]
+~$ ./compress_video.sh [Extension] [Start dir] [Destination dir]
 ```
 
 # Example
 Compress videos from location ```/mnt/videos``` to ```/home/user/videos```
 ```
-~$./compress_video.sh mkv /mnt/videos ./videos
+~$ ./compress_video.sh mkv /mnt/videos ./videos
 ```
 The output might look like this:
 ```
