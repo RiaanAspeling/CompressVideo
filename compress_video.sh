@@ -2,7 +2,7 @@
 
 function draw_line()
 {
-    local width=$(stty -a <"/dev/pts/1" | grep -Po '(?<=columns )\d+')
+    local width=$(tput cols)
     for (( x = 0; x < "$width"; ++x )); do echo -e -n "\e[1;32m-"; done
     echo -e "\e[0m"
 }
