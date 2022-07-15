@@ -1,4 +1,4 @@
-# Compress Video h265 recursivly
+# Compress Video to h265 recursivly
 This script compresses videos to h265 (HEVC) from one location to another recursivly without overwriting the destination.
 
 # Requirement
