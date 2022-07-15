@@ -1,5 +1,5 @@
-# Compress Video to h265 recursivly
-This script compresses videos to h265 (HEVC) from one location to another recursivly without overwriting the destination.
+# Compress Video to h265 recursively
+This script compresses videos to h265 (HEVC) from one location to another recursively without overwriting the destination.
 
 # Requirement
 The script uses ffmpeg and can be install on Debian/Ubuntu based systems with:
@@ -20,8 +20,10 @@ Compress MKV videos from location ```/mnt/videos``` to ```~/videos```
 The output might look like this:
 ```
 Destination file exist: ~/videos/Season 1/video1.mkv
+Destination file exist: ~/videos/Season 1/video2.mkv
+Destination file exist: ~/videos/Season 1/video3.mkv
 ---------------------------------------------------------------------------------------------------------------------------------
-Compressing  /mnt/videos/Season 1/video2.mkv  with size ( 1280 x 720 ) to file  ~/videos/Season 1/video2.mkv
+Compressing  /mnt/videos/Season 1/video4.mkv  with size ( 1280 x 720 ) to file  ~/videos/Season 1/video4.mkv
 ---------------------------------------------------------------------------------------------------------------------------------
 x265 [info]: HEVC encoder version 3.4
 x265 [info]: build info [Linux][GCC 7.5.0][64 bit] 8bit+10bit+12bit
