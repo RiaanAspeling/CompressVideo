@@ -106,6 +106,7 @@ while getopts ${optstring} arg; do
   esac
 done
 
+# check that all arguments was supplied
 if [ -z "$extension" ]; then
     echo "Extension argument is required!"
     usage
@@ -122,7 +123,7 @@ fi
 # Enable globstar for recursive matching
 shopt -s globstar
 
-# Param 2 is the source directory. Loop though all sub-folders and files from the source folder.
+# Loop though all sub-folders and files from the source folder.
 for i in $source/**/*.$extension; do
     relative_path=${i#$source}
 
