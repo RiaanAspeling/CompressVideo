@@ -19,9 +19,9 @@ Now the script  is ready to use. You could move the script to somewhere in your 
 ```
 ~$ ./compress_video.sh [-e EXTENSION] [-s SOURCE] [-d DESTINATION]
         -e EXTENSION        Mandatory: Specify the file extension to filter on source. Eg: -e mkv
-        -s SOURCE           Mandatory: Specify the source folder to compress from. Eg: /mnt/myvideos
+        -s SOURCE           Mandatory: Specify the source folder to compress from. Eg: -s /mnt/myvideos
         -d DESTINATION      Mandatory: Specify the destination folder to compress to. Note that files 
-                                       will not be overwritten. Eg: /home/user/myvideos
+                                       will not be overwritten. Eg: -d /home/user/myvideos
 ```
 
 # Example
