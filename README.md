@@ -17,19 +17,22 @@ Now the script  is ready to use. You could move the script to somewhere in your 
 
 # Usage
 ```
-~$ ./compress_video.sh [Extension] [Start dir] [Destination dir]
+~$ ./compress_video.sh [-e EXTENSION] [-s SOURCE] [-d DESTINATION]
+    -e EXTENSION        Specify the file extension to filter on source. Eg: -e mkv
+    -s SOURCE           Specify the source folder to compress from. Eg: /mnt/myvideos
+    -d DESTINATION      Specify the destination folder to compress to. Note that files will not be overwritten. Eg: /home/user/myvideos
 ```
 
 # Example
 Compress MKV videos from location ```/mnt/videos``` to ```~/videos```
 ```
-~$ ./compress_video.sh mkv /mnt/videos ~/videos
+~$ ./compress_video.sh -e mkv -s /mnt/videos -d ~/videos
 ```
 The output might look like this:
 ```
-Destination file exist: ~/videos/Season 1/video1.mkv
-Destination file exist: ~/videos/Season 1/video2.mkv
-Destination file exist: ~/videos/Season 1/video3.mkv
+Destination file exists: ~/videos/Season 1/video1.mkv
+Destination file exists: ~/videos/Season 1/video2.mkv
+Destination file exists: ~/videos/Season 1/video3.mkv
 ---------------------------------------------------------------------------------------------------------------------------------
 Compressing  /mnt/videos/Season 1/video4.mkv  with size ( 1280 x 720 ) to file  ~/videos/Season 1/video4.mkv
 ---------------------------------------------------------------------------------------------------------------------------------
