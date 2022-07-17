@@ -5,7 +5,7 @@ This script compresses videos to h265 (HEVC) from one location to another recurs
 - Open Source bash script
 - Can run on Linux and [Windows WSL](https://docs.microsoft.com/en-us/windows/wsl/)
 - Can be run in a screen session in the background
-- Compress all videos in subfolders
+- Compress all videos in subfolders and copy folder structure to destination
 - No complicated switches
 - If terminated, can be restarted and will not overwrite already created files
 - Will not delete or overwrite any existing files
