@@ -40,14 +40,10 @@ Compress MKV videos from location ```/mnt/videos``` to ```~/videos```
 ~$ ./compress_video.sh -e mkv -s /mnt/videos -d ~/videos
 ```
 The output might look like this:
-<span style="color: yellow">
 ```
 Destination file exists: ~/videos/Season 1/video1.mkv
 Destination file exists: ~/videos/Season 1/video2.mkv
 Destination file exists: ~/videos/Season 1/video3.mkv
-```
-</span>
-```
 ---------------------------------------------------------------------------------------------------------------------------------
 Compressing  /mnt/videos/Season 1/video4.mkv  with size ( 1280 x 720 ) to file  ~/videos/Season 1/video4.mkv
 ---------------------------------------------------------------------------------------------------------------------------------
