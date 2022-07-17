@@ -69,3 +69,6 @@ x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
 x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
 frame=33025 fps= 13 q=32.0 size=  219136kB time=00:18:23.03 bitrate=1627.5kbits/s speed=0.418x
 ```
+
+# Bugs or enhancements
+Use the [Issue Tracker](https://github.com/RiaanAspeling/CompressVideo/issues) on this repo to log issues or suggest enhancements.
