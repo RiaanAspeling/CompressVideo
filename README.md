@@ -7,7 +7,7 @@ This script compresses videos to h265 (HEVC) from one location to another recurs
 - Compress all videos in subfolders
 - No complicated switches
 - If terminated, can be restarted and will not overwrite already created files
-- Will not delete of overwrite any files
+- Will not delete or overwrite any existing files
 - Will not recompress a source video that's already in h265 (HEVC) format.
 
 # Requirement
