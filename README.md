@@ -11,11 +11,11 @@ This script compresses videos to h265 (HEVC) from one location to another recurs
 - Will not recompress a source video that's already in h265 (HEVC) format.
 
 # Requirement
-The script uses ffmpeg and can be install on Debian/Ubuntu based systems or Windows WSL with:
+The script uses ffmpeg and can be install on Debian/Ubuntu based systems or [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/) with:
 ```
 ~$ apt install ffmpeg
 ```
-Windows users can use the Windows Subsystem for Linux ([WSL](https://docs.microsoft.com/en-us/windows/wsl/)) to run this script.
+Windows users, to find out more regarding WSL, use [this link](https://docs.microsoft.com/en-us/windows/wsl/).
 
 # Download/Install script
 To download and use the script, do the following in a folder of your choosing:
