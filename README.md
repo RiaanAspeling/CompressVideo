@@ -1,6 +1,12 @@
 # Compress Video to h265 recursively
 This script compresses videos to h265 (HEVC) from one location to another recursively without overwriting the destination.
 
+# Features
+- Open Source bash script
+- Can be run in a screen session in the background
+- Compress all videos in subfolders
+- No complicated switches.
+
 # Requirement
 The script uses ffmpeg and can be install on Debian/Ubuntu based systems with:
 ```
