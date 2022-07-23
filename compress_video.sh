@@ -124,8 +124,8 @@ fi
 shopt -s globstar
 
 # Loop though all sub-folders and files from the source folder.
-for i in $source/**/*.$extension; do
-    relative_path=${i#$source}
+for i in "$source"/**/*."$extension"; do
+    relative_path="${i#$source}"
 
     # Check if the destination file already exists.
     if [[ -f "$destination$relative_path" ]]; then
@@ -147,11 +147,11 @@ for i in $source/**/*.$extension; do
     height=$(ffprobe -loglevel error -select_streams v:0 -show_entries stream=height -of default=nw=1:nk=1 "$i")
 
     draw_line
-    echo -e "Compressing \e[1;32m" $i "\e[0m with size (\e[1;31m" $width "x" $height "\e[0m) to file \e[1;34m" $destination$relative_path "\e[0m"
+    echo -e "Compressing \e[1;32m""$i""\e[0m with size (\e[1;31m" $width "x" $height "\e[0m) to file \e[1;34m""$destination""""$relative_path""\e[0m"
     draw_line
 
     # Create the output folder if it doesn't exist
-    mkdir -p $destination"$(dirname "$relative_path")"
+    mkdir -p "$destination""$(dirname "$relative_path")"
 
     # Run ffmpeg with nice to not hog all CPU for itself
     nice ffmpeg -stats -hide_banner -loglevel error -i "$i" -c:v libx265 -vtag hvc1 -c:a copy "$destination$relative_path"
